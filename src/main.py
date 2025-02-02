@@ -55,7 +55,7 @@ if user_prompt:
         messages=messages
     )
 
-    # ✅ Correct way to access the response
+    # Correct way to access the response
     assistant_response = resource.choices[0].message.content
 
     st.session_state.chat_history.append({"role": "assistant", "content": assistant_response})
