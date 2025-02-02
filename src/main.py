@@ -27,7 +27,10 @@ client = Groq(api_key=GROQ_API_KEY)
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
-st.title("LLAMA 3.1 8B")
+import streamlit as st
+
+# Center the title
+st.markdown("<h1 style='text-align: center;'>LLAMA 3.3-70 B</h1>", unsafe_allow_html=True)
 
 # Display previous messages
 for message in st.session_state.chat_history:
